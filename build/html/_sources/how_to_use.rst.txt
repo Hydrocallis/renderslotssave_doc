@@ -1,0 +1,53 @@
+
+
+
+How to use(使い方)
+
+=======
+
+
+==========
+1. Splist image editer（素早くカメラ画面移動へ）
+==========
+
+このボタンを押す事によって素早くカメラ画面を左に作ることができます。
+
+左ボタンは４回まで押せ、最高画面を四分割できます。
+
+By pressing this button, you can quickly create a camera screen to the left.
+
+The left button can be pressed up to four times to divide the screen into four sections.
+
+|splist_image_editer|
+
+|camera_set.gif|
+
+
+
+=================
+2. Image Set（画像の設定）
+=================
+画像のレンダリングに関して、主要なイメージ設定をここに集結しました。
+
+The main image settings are gathered here with respect to image rendering.
+
+|imageset|
+
+
+
+.. |splist_image_editer| image:: /img/howtouse/splist_image_editer.jpg
+   :scale: 100%
+
+.. |camera_set| image:: /img/howtouse/camera_set.gif
+   :scale: 80%
+
+
+.. |imageset| image:: /img/howtouse/imageset.jpg
+   :scale: 80%
+
+
+
+
+
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to use(Image Render) &mdash; Render Slots Save Documents 2022-11-25 ドキュメント</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="prev" title="Install" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Render Slots Save Documents
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to use(Image Render)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#splist-image-editer">1. Splist image editer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#image-set">2. Image Set</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#transparent">Transparent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usefreestyle">Usefreestyle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#as-render-pass">As Render Pass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#render-region">Render Region</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#crop-to-render-region">Crop to Render Region</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#burn-set">3. Burn Set</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Render Slots Save Documents</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">How to use(Image Render)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/image_render.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-use-image-render">
+<h1>How to use(Image Render)<a class="headerlink" href="#how-to-use-image-render" title="この見出しへのパーマリンク">¶</a></h1>
+<p>イメージのレンダリング方法</p>
+<section id="splist-image-editer">
+<h2>1. Splist image editer<a class="headerlink" href="#splist-image-editer" title="この見出しへのパーマリンク">¶</a></h2>
+<p>（レンダリング画面の分割）</p>
+<p>このボタンを押す事によって素早くカメラ画面を左に作ることができます。</p>
+<p>左ボタンは４回まで押せ、最高画面を四分割できます。</p>
+<p>By pressing this button, you can quickly create a camera screen to the left.</p>
+<p>The left button can be pressed up to four times to divide the screen into four sections.</p>
+<p><a class="reference internal" href="_images/splist_image_editer.png"><img alt="splist_image_editer" src="_images/splist_image_editer.png" style="width: 1282.0px; height: 996.0px;" /></a></p>
+<a class="reference internal image-reference" href="_images/camera_set.gif"><img alt="_images/camera_set.gif" src="_images/camera_set.gif" style="width: 769.1999999999999px; height: 597.6px;" /></a>
+</section>
+<section id="image-set">
+<h2>2. Image Set<a class="headerlink" href="#image-set" title="この見出しへのパーマリンク">¶</a></h2>
+<p>（イメージのセット方法）</p>
+<p>画像のレンダリングに関して、主要なイメージ設定をここに集結しました。</p>
+<p>The main image settings are gathered here with respect to image rendering.</p>
+<p><a class="reference internal" href="_images/imageset.jpg"><img alt="imageset" src="_images/imageset.jpg" style="width: 153.60000000000002px; height: 189.60000000000002px;" /></a></p>
+<p>背景の透明化や線の出力、
+線とイメージの分離などの設定がこちらで可能になります。</p>
+<p>You can set background transparency, line output, and line/image separation.
+You can also set the background transparency, line output, line and image separation, etc. here.</p>
+<img alt="_images/imagerender-image_set.gif" src="_images/imagerender-image_set.gif" />
+<section id="transparent">
+<h3>Transparent<a class="headerlink" href="#transparent" title="この見出しへのパーマリンク">¶</a></h3>
+<p>(背景の透明化)</p>
+<img alt="_images/transparent.jpg" src="_images/transparent.jpg" />
+</section>
+<section id="usefreestyle">
+<h3>Usefreestyle<a class="headerlink" href="#usefreestyle" title="この見出しへのパーマリンク">¶</a></h3>
+<p>(線画出力)</p>
+<img alt="_images/usefreestyle.jpg" src="_images/usefreestyle.jpg" />
+</section>
+<section id="as-render-pass">
+<h3>As Render Pass<a class="headerlink" href="#as-render-pass" title="この見出しへのパーマリンク">¶</a></h3>
+<p>(線画の分離)</p>
+<img alt="_images/asrender.jpg" src="_images/asrender.jpg" />
+</section>
+<section id="render-region">
+<h3>Render Region<a class="headerlink" href="#render-region" title="この見出しへのパーマリンク">¶</a></h3>
+<p>(レンダーの領域)</p>
+<img alt="_images/resion.jpg" src="_images/resion.jpg" />
+</section>
+<section id="crop-to-render-region">
+<h3>Crop to Render Region<a class="headerlink" href="#crop-to-render-region" title="この見出しへのパーマリンク">¶</a></h3>
+<p>(レンダーの領域のクリップ)</p>
+<img alt="_images/crop.jpg" src="_images/crop.jpg" />
+</section>
+</section>
+<section id="burn-set">
+<h2>3. Burn Set<a class="headerlink" href="#burn-set" title="この見出しへのパーマリンク">¶</a></h2>
+<p>イメージにセットしたい情報があった時はこちらのメタデータ情報を入力できます。</p>
+<p>You can enter metadata information here when you have information you want to set in the image.</p>
+<p><a class="reference internal" href="_images/burn_metadata_set.jpg"><img alt="imageset2" src="_images/burn_metadata_set.jpg" style="width: 204.0px; height: 541.6px;" /></a></p>
+<p><a class="reference internal" href="_images/burn_data_demo.jpg"><img alt="burn_data_demo" src="_images/burn_data_demo.jpg" style="width: 721.6px; height: 662.4000000000001px;" /></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Install" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Hydrocallis.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
